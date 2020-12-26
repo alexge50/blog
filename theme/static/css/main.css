@@ -2,6 +2,9 @@ body
 {
   font-family: Palatino, Georgia, Times, "Times New Roman", serif;
   font-size: 24px;
+  color: #d2d2d2;
+
+  background-color: #1a1a1a;
 }
 
 /*********/
@@ -26,6 +29,7 @@ article h6
   font-family: Verdana, Tahoma, Arial, sans;
 }
 
+
 code,
 tt,
 kbd,
@@ -46,13 +50,42 @@ article > header > p.author-cat-tag
   line-height: 1.5em;
 }
 
+/**************/
+/* font sizes */
+/**************/
+
+article h1
+{
+  font-size: 32px;
+}
+
+article h2
+{
+  font-size: 28px;
+}
+
+article h3
+{
+  font-size: 26px;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6
+{
+  padding-top: 16px;
+}
+
 /*****/
 /* a */
 /*****/
 
 a
 {
-  color: #A85206;
+  color: #058ED9;
   text-decoration: none;
 }
 
@@ -63,7 +96,7 @@ a:hover
 
 a:visited
 {
-  color: #D67113;
+  color: #04669a;
 }
 
 kbd
@@ -99,33 +132,24 @@ dd
 
 table
 {
-  display: block;
-
-  overflow-x: auto;
-}
-
-table,
-th,
-td
-{
-  border: none;
+  border-collapse: collapse;
+  margin: auto;
 }
 
 th,
 td
 {
-  padding: 0 0.5ex 0 0.5ex;
+  border: 1px solid #d2d2d2;
+  padding: 5px;
 }
 
 th
 {
-  background-color: #FFAD61;
   font-weight: normal;
 }
 
 td
 {
-  background-color: #FFC38B;
 }
 
 /*********************/
@@ -290,25 +314,12 @@ body > footer
 
 #header > div.content
 {
-  display: none;
-}
 
-#header:hover > div.content
-{
-  display: block;
-  position: absolute;
-  top: -3.5ex;
-  right: 0;
-  left: 0;
-  z-index: 1;
-  background-color: rgba(255, 195, 139, 0.9);  /* #FFC38B */
-
-  border-radius: 0 0 1ex 1ex;
 }
 
 #header header
 {
-  text-align: center;
+  text-align: left;
 }
 
 #header header,
@@ -316,18 +327,18 @@ body > footer
 #header header > h1 > a:hover,
 #header header > h1 > a:visited
 {
-  color: #D67113;
+  /*color: #D67113;*/
 }
 
 #header header > h1
 {
-  margin-top: 1rem;
-  margin-bottom: 0;
+  margin-top: 2rem;
+  margin-bottom: 15px;
 }
 
 #header header > h1 > a:hover
 {
-  color: #A85206;
+  /*color: #A85206;*/
   text-decoration: none;
 }
 
@@ -335,6 +346,15 @@ body > footer
 {
   margin: 0;
   color: #A85206;
+}
+
+#header header > h1 > a
+{
+  color: #ab5bd2;
+}
+
+#header {
+  padding-bottom: 40px;
 }
 
 /***************/
@@ -387,7 +407,7 @@ body > footer
 #header nav > div.container > div.handle,
 #header nav > div.container > div.handle > a
 {
-  color: #A85206;
+  color: #d2d2d2;
 }
 
 #header nav > div.container > div.handle
@@ -398,7 +418,7 @@ body > footer
 
 #header nav > div.container > div.content a.active
 {
-  color: #A85206;
+  color: #9932cc;
 }
 
 /********/
@@ -407,7 +427,6 @@ body > footer
 
 #content-title
 {
-  text-align: center;
 }
 
 #content-title,
@@ -511,7 +530,7 @@ span.tag:hover::before,
 span.translation:hover::after,
 span.translation:hover::before
 {
-  color: #F0923B;
+  color: #ab5bd2;
 }
 
 span.author > a:hover,
@@ -520,6 +539,19 @@ span.tag > a:hover,
 span.translation > a:hover
 {
   text-decoration: none;
+}
+
+/*******************/
+/* article entry   */
+/*******************/
+span.author > span.name > a
+{
+ color: #ab5bd2;
+}
+
+span.category > a, span.tag > a, header > h2 > a
+{
+  color: #d2d2d2 !important;
 }
 
 /*******************/
@@ -566,9 +598,9 @@ article > div.summary > p::after
   background: transparent
               linear-gradient(
                 to bottom,
-                rgba(255, 255, 255, 0.0)   0%,
-                rgba(255, 255, 255, 0.1)  40%,
-                rgba(255, 255, 255, 1.0) 100%
+                rgb(26, 26, 26, 0.0) 0%,
+                rgb(26, 26, 26, 0.1) 40%,
+                rgb(26, 26, 26, 1.0) 100%
               );
   text-align: right;
 }
@@ -583,7 +615,7 @@ article > div.summary > span.readmore
 
 article > div.summary > span.readmore > a
 {
-  color: #F0923B;
+  color: #ab5bd2;
 }
 
 /*****************/
