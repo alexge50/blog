@@ -296,7 +296,14 @@ body > main,
 body > footer
 {
   margin: 0 auto;
-  width: 1024px;
+  width: 70%;
+}
+
+#disqus_thread
+{
+  margin: 0 auto;
+  width: 70%;
+  padding-top: 50px;
 }
 
 #header,
