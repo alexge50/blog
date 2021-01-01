@@ -14,6 +14,7 @@
       </style>
     {% else %}
       <link rel='stylesheet' href='{{ SITEURL }}{% if THEME_STATIC_DIR %}/{{ THEME_STATIC_DIR }}{% endif %}/css/{{ CSS_FILE }}'/>
+      <link rel='stylesheet' href='{{ SITEURL }}{% if THEME_STATIC_DIR %}/{{ THEME_STATIC_DIR }}{% endif %}/css/highlight.css'/>
     {% endif %}
   {% endif %}
   {% if FAVICON %}
