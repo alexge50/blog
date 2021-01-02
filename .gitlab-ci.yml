@@ -1,0 +1,23 @@
+image: python:3.8
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+
+before_script:
+  - pip install pelican
+
+stages:
+  - Build
+
+build:
+    stage: Build
+    script:
+        - pelican content -t theme
+    artifacts:
+        paths:
+          - output/
