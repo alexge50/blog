@@ -9,7 +9,7 @@ cache:
     - venv/
 
 before_script:
-  - pip install pelican
+  - pip install pelican Markdown
 
 stages:
   - Build
@@ -18,7 +18,7 @@ stages:
 build:
     stage: Build
     script:
-        - pelican content -t theme
+        - make publish
     artifacts:
         paths:
           - output/
