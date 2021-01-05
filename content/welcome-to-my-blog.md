@@ -1,7 +1,7 @@
 Title:  Welcome to my blog!
 Date: 2021-01-05 05:37
 Category: blog
-Summary: This is a test article!
+Summary: Hello traveler, welcome to my blog!
 
 Welcome to [b.alexge50.com](https://b.alexge50.com), my blog - the blog where 
 I will write about my latest findings about demonic incantations (aka `C++` articles), about my mainframe
